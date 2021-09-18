@@ -1,0 +1,400 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --bg: #fff;
+    --theme-main: #E02C6D;
+    --theme-blue: #2D25A0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+section {
+    margin: 70px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 24px;
+    background-color: var(--theme-main);
+    text-align: center;
+    transition: box-shadow .4s ease;
+}
+.btn:hover {
+    box-shadow: 0 0 10px #00000077;
+}
+.section-title {
+    width: 100%;
+    padding: 10px 0;
+}
+.section-title h2 {
+    display: inline-block;
+    font-size: 40px;
+    border-bottom: 3px solid var(--theme-main);
+}
+.menu__item a {
+    font-size: 16;
+    transition: all .3s ease
+}
+.menu__item:hover a {
+    color: #000;
+}
+.description {
+    font-size: 16px;
+    color: #6C6C6C;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+
+/* ---------------------------*\
+            HEADER
+\*----------------------------*/
+.header {
+    width: 100%;
+    padding: 42px 0;
+    background-color: var(--theme-blue);
+}
+
+/* ------------navbar-------------- */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0;
+}
+.menu-container {
+    position: relative;
+    width: 50%;
+}
+.menu-container label {
+    width: 100%;
+    display: none;
+    font-size: 30px;
+    color: var(--bg);
+    text-align: right;
+}
+.menu-container label .fa-times {
+    color: #000;
+    text-align: right;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transition: all .3s ease;
+}
+.menu__item a {
+    color: #fff;
+}
+/* -------------------------------- */
+
+
+.header-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 44px 0;
+}
+.header-text {
+    width: 500px;
+    max-width: 50%;
+}
+.header-title {
+    font-size: 64px;
+    color: #fff;
+    line-height: 80px;
+    margin-bottom: 27px;
+}
+.header-bg {
+    width: 550px;
+    max-width: 50%;
+    background-image: url(../images/bg-ball.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.header-bg img {
+    transition: transform .7s ease;
+}
+.header-bg:hover img {
+    transform: rotate(1deg) skew(-23deg, 16deg) translate(-10px,10px);
+}
+
+
+
+
+
+/* ---------------------------*\
+            PLAYERS
+\*----------------------------*/
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    padding: 0 30px;
+}
+.player {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 0 0 40px 12px #00000021;
+}
+.player-title {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+    margin: 16px 0;
+}
+.player-info {
+    width: 100%;
+    font-size: 16px;
+    color: #6C6C6C;
+    max-height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+/* ---------------------------*\
+            HIGHLIGHT
+\*----------------------------*/
+.highlight-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 44px 0;
+}
+.highlight-text {
+    width: 500px;
+    max-width: 50%;
+}
+.highlight-title {
+    font-size: 48px;
+    color: #000;
+    line-height: 60px;
+    margin-bottom: 27px;
+}
+.highlight-bg {
+    width: 550px;
+    max-width: 50%;
+}
+
+
+
+/* ---------------------------*\
+            FOOTER
+\*----------------------------*/
+footer {
+    width: 100%;
+    margin-top: 64px;
+    padding-bottom: 64px;
+}
+.footer-wrapper  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-wrapper img {
+    width: 400px;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 20px 0;
+}
+.social i {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #546ab1;
+    background-color: #969bab5e;
+}
+.copyright {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------*\
+        FOR TABLET DEVICES
+\*----------------------------*/
+@media screen and (max-width: 768px) {
+    
+    /* --------GLOBAL---------- */
+    .container {
+        width: calc(100% - 30px);
+    }
+    section {
+        margin: 40px 0;
+    }
+    .btn {
+        padding: 8px 18px;
+    }
+    .section-title {
+        font-size: 24px;
+    }
+
+
+
+    /* ----------HEADER------- */
+
+
+    .header-text, .header-bg {
+        padding: 10px;
+    }
+    .header-title {
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: bold;
+    }
+   
+
+
+
+    .players {
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+    }
+
+
+
+
+
+    /* -------HIGHLIGHT-------- */
+    .highlight-text, .highlight-bg {
+        padding: 10px;
+    }
+    .highlight-title {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+
+
+
+
+    /* ------FOOTER------- */
+    .footer-wrapper img {
+        width: 300px;
+    }
+    .social {
+        width: 200px;
+    }
+}
+
+
+
+
+
+
+/* ---------------------------*\
+        FOR MOBILE DEVICES
+\*----------------------------*/
+@media screen and (max-width: 480px) {
+
+    /* ----------HEADER------- */
+
+    .header-main {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 0;
+    }
+    .header-text, .header-bg {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 0;
+    }
+    .header-title {
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: bold;
+    }
+   
+
+
+
+    .players {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+
+
+
+
+    /* -------HIGHLIGHT-------- */
+    .highlight-wrapper {
+        flex-direction: column;
+        padding: 0;
+    }
+    .highlight-text, .highlight-bg {
+        max-width: 100%;
+        padding: 30px 0;
+    }
+    .highlight-title {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+
+
+
+
+    /* ------FOOTER------- */
+    .footer-wrapper img {
+        width: 250px;
+    }
+    .social {
+        width: 170px;
+    }
+}
